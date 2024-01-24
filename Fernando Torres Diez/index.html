@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="inner-header">
+        <ul>
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/nosotros">Nosotros</a></li>
+          <li>
+            <a href="/"><img class="logo" src="./logo.png" alt="logo" /></a>
+          </li>
+          <li><a href="/productos">Productos</a></li>
+          <li><a href="/">Contacto</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div class="carousel">
+        <div class="carousel-img carousel-img-1"></div>
+        <div class="carousel-img carousel-img-2"></div>
+        <div class="carousel-img carousel-img-3"></div>
+        <div class="carousel-img carousel-img-4"></div>
+      </div>
+      <div class="products">
+        <div class="inner-products-container">
+          <h2>Productos</h2>
+          <div class="cards-container">
+            <div class="card">
+              <p class="card-title">Caballero</p>
+              <div class="card-carousel">
+                <div class="card-carousel-img card-carousel-cab-1"></div>
+                <div class="card-carousel-img card-carousel-cab-2"></div>
+                <div class="card-carousel-img card-carousel-cab-3"></div>
+              </div>
+            </div>
+            <div class="card">
+              <p class="card-title">Dama</p>
+              <div class="card-carousel">
+                <div class="card-carousel-img card-carousel-dam-1"></div>
+                <div class="card-carousel-img card-carousel-dam-2"></div>
+                <div class="card-carousel-img card-carousel-dam-3"></div>
+                <div class="card-carousel-img card-carousel-dam-4"></div>
+                <div class="card-carousel-img card-carousel-dam-5"></div>
+              </div>
+            </div>
+          </div>
+          <div class="cards-container">
+            <div class="card">
+              <p class="card-title">Niño</p>
+              <div class="card-carousel">
+                <div class="card-carousel-img card-carousel-nino-1"></div>
+                <div class="card-carousel-img card-carousel-nino-2"></div>
+                <div class="card-carousel-img card-carousel-nino-3"></div>
+              </div>
+            </div>
+            <div class="card">
+              <p class="card-title">Niña</p>
+              <div class="card-carousel">
+                <div class="card-carousel-img card-carousel-nina-1"></div>
+                <div class="card-carousel-img card-carousel-nina-2"></div>
+                <div class="card-carousel-img card-carousel-nina-3"></div>
+              </div>
+            </div>
+          </div>
+          <div class="cards-container">
+            <div class="card">
+              <p class="card-title">Accesorios</p>
+              <div class="card-carousel">
+                <div class="card-carousel-img card-carousel-acc-1"></div>
+                <div class="card-carousel-img card-carousel-acc-2"></div>
+                <div class="card-carousel-img card-carousel-acc-3"></div>
+                <div class="card-carousel-img card-carousel-acc-4"></div>
+                <div class="card-carousel-img card-carousel-acc-5"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="inner-footer">
+        <div class="footer-content">
+          <div class="left">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.5475053268433!2d-99.14284982311612!3d19.431947440698377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fed35f47cd07%3A0xc749e978d87fe3cc!2sTodo%20Sports!5e0!3m2!1ses-419!2smx!4v1705463169561!5m2!1ses-419!2smx"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="right">
+            <h3>Ubicación</h3>
+            <p>
+              Dentro de la plaza Olimpia a un lado de las escaleras eléctricas,
+              frente al elevador C. de Venustiano Carranza 14-Local 67, Centro
+              Histórico de la Cdad. de México, Centro, Cuauhtémoc, 06000 Ciudad
+              de México, CDMX.
+            </p>
+            <h3>Contacto</h3>
+            <a class="contact-text" href="">
+              <img class="icon" src="./whatsapp.svg" />
+              5517441435 | 5568627375
+            </a>
+            <a class="contact-text" href="">
+              <img class="icon" src="./email.svg" />
+              nenor29@yahoo.com
+            </a>
+            <a class="contact-text" href="">
+              <img class="icon" src="./facebook.svg" />
+              Todo Sports
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+  </body>
+</html>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    $(".carousel").slick({
+      infinite: true,
+      slidesToShow: 1,
+      arrows: false,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      fade: true,
+      cssEase: "linear",
+    });
+
+    $(".card-carousel").slick({
+      infinite: true,
+      slidesToShow: 1,
+      arrows: false,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      fade: true,
+      cssEase: "linear",
+    });
+  });
+
+  $(window).on("scroll", function (e) {
+    if ($(document).scrollTop() >= 300) {
+      $("header").addClass("with-background");
+    } else {
+      $("header").removeClass("with-background");
+    }
+  });
+</script>
+
+<style>
+  .inner-products-container {
+    max-width: 1280px;
+    margin: auto;
+    padding: 0px 15px;
+  }
+
+  .inner-products-container h2 {
+    color: #daa520;
+    text-align: center;
+    font-size: 38px;
+    font-weight: 600;
+    margin-top: 90px;
+  }
+
+  .cards-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 100px 0px;
+  }
+
+  .card {
+    flex: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(1, 23, 80, 0.19) 0px 10px 20px,
+      rgba(1, 23, 80, 0.23) 0px 6px 6px;
+  }
+
+  .card-title {
+    margin: 0;
+    padding: 16px;
+    text-align: center;
+    background: black;
+    font-size: 22px;
+    color: #daa520;
+  }
+
+  .card-carousel {
+  }
+
+  .card-carousel-img {
+    height: 900px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .card-carousel-cab-1 {
+    background-image: url("products/caballero_1.jpg");
+  }
+
+  .card-carousel-cab-2 {
+    background-image: url("products/caballero_2.jpg");
+  }
+
+  .card-carousel-cab-3 {
+    background-image: url("products/caballero_3.jpg");
+  }
+
+  .card-carousel-dam-1 {
+    background-image: url("products/dama_1.jpg");
+  }
+
+  .card-carousel-dam-2 {
+    background-image: url("products/dama_2.jpg");
+  }
+
+  .card-carousel-dam-3 {
+    background-image: url("products/dama_3.jpg");
+  }
+
+  .card-carousel-dam-4 {
+    background-image: url("products/dama_4.jpg");
+  }
+
+  .card-carousel-dam-5 {
+    background-image: url("products/dama_5.jpg");
+  }
+
+  .card-carousel-nino-1 {
+    background-image: url("products/nino_1.jpg");
+  }
+
+  .card-carousel-nino-2 {
+    background-image: url("products/nino_2.jpg");
+  }
+
+  .card-carousel-nino-3 {
+    background-image: url("products/nino_3.jpg");
+  }
+
+  .card-carousel-nina-1 {
+    background-image: url("products/nina_1.jpg");
+  }
+
+  .card-carousel-nina-2 {
+    background-image: url("products/nina_2.jpg");
+  }
+
+  .card-carousel-nina-3 {
+    background-image: url("products/nina_3.jpg");
+  }
+
+  .card-carousel-acc-1 {
+    background-image: url("products/accesorios_1.jpg");
+  }
+
+  .card-carousel-acc-2 {
+    background-image: url("products/accesorios_2.jpg");
+  }
+
+  .card-carousel-acc-3 {
+    background-image: url("products/accesorios_3.jpg");
+  }
+
+  .card-carousel-acc-4 {
+    background-image: url("products/accesorios_4.jpg");
+  }
+
+  .card-carousel-acc-5 {
+    background-image: url("products/accesorios_5.jpg");
+  }
+
+  .carousel {
+    border-bottom: solid 6px #daa520;
+  }
+
+  .carousel-img {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.8);
+    }
+  }
+
+  .carousel-img-1 {
+    background-image: url("carousel_1.jpeg");
+  }
+
+  .carousel-img-2 {
+    background-image: url("carousel_2.jpg");
+  }
+
+  .carousel-img-3 {
+    background-image: url("carousel_4.jpg");
+    background-position: center;
+  }
+
+  .carousel-img-4 {
+    background-image: url("carousel_5.jpg");
+    background-position: center;
+  }
+
+  footer {
+    /* position: fixed;
+    bottom: 0; */
+    width: 100%;
+    background: black;
+    border-top: solid 6px #daa520;
+  }
+
+  footer h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 25px 0px;
+  }
+
+  .inner-footer {
+    max-width: 1280px;
+    margin: auto;
+    padding: 0px 15px;
+  }
+
+  .footer-content {
+    display: flex;
+    padding: 20px 0px;
+  }
+
+  .footer-content .left {
+    flex: 2;
+    padding-right: 30px;
+    img {
+      width: 100%;
+      border-radius: 10px;
+      border: solid 4px #cb282d;
+    }
+  }
+
+  .footer-content .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    color: #daa520;
+    border-left: solid 2px #daa520;
+    padding-left: 30px;
+  }
+
+  .contact-text {
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    padding: 10px 0px;
+    color: #daa520;
+  }
+
+  footer .icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+  }
+
+  html,
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+  }
+
+  header.with-background {
+    background: black;
+    border-bottom: solid 6px #daa520;
+  }
+
+  .inner-header {
+    max-width: 1280px;
+    margin: auto;
+    padding: 0px 15px;
+  }
+
+  .inner-header ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 10px 0px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .inner-header ul li {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    padding: 0px 10px;
+    color: black;
+    cursor: pointer;
+    font-size: 24px;
+  }
+
+  .inner-header ul li a {
+    color: black;
+    text-decoration: none;
+    &:hover {
+      color: #daa520;
+      text-decoration: underline;
+    }
+  }
+
+  .with-background .inner-header ul li a {
+    color: #daa520;
+    &:hover {
+      color: black;
+    }
+  }
+
+  .logo {
+    width: 400px;
+  }
+</style>
